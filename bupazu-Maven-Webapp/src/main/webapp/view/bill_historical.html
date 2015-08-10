@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>租房平台</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="assets/images/app-icon72x72@2x.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+<link rel="apple-touch-icon-precomposed" href="assets/images/app-icon72x72@2x.png">
+
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+<meta name="msapplication-TileColor" content="#0e90d2">
+
+<link rel="stylesheet" href="assets/css/amazeui.min.css">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class="body-white-bgcolor">
+
+<!-- Header -->
+<header data-am-widget="header" class="am-header am-header-fixed">
+  <div class="am-header-left am-header-nav"> 
+   <a href="javascript:history.go(-1)" class="am-btn"><i class="am-header-icon am-icon-angle-left am-icon-md"></i></a>  </div>
+  <h1 class="am-header-title">历史账单</h1>
+  <div class="am-header-right am-header-nav">
+  <!--<a href="login.html" class="am-btn"><i class="am-header-icon am-icon-user"></i><span class="am-header-nav-title">登录</span> </a> -->
+  </div>
+</header>
+
+<div style="height:15px;"></div>
+
+<div class="am-container">
+    <div class="am-input-group">
+      <input type="text" class="am-form-field"  placeholder="请输入日期,房客,合同号,缴费状态">
+	  <span class="am-input-group-btn">
+        <button class="am-btn am-btn-default" type="button"><span class="am-icon-search"></span> </button>
+      </span>
+    </div>
+</div>
+
+<div style="height:15px;"></div>
+
+<div class="am-scrollable-horizontal am-container">
+  <table class="am-table am-table-compact self-table-tr-active" >
+  
+	 <thead>
+        <tr>
+            <th style="border-top:1px solid #666666">合同号</th>
+            <th style="border-top:1px solid #666666">房客</th>
+            <th style="border-top:1px solid #666666">状态</th>
+			<th style="border-top:1px solid #666666">日期</th>
+        </tr>
+    </thead>
+ 
+    <tbody>
+ 
+	  <tr onClick="javascript:window.location.href='owner_bill_detail_fluctuant.html'">
+        <td class="txt-bottom-line">XX13458</td>
+		<td class="txt-bottom-line">刘七</td>
+		<td class="txt-bottom-line"><span>已缴</span></td>
+		<td class="txt-bottom-line"><span>2015-03</span></td>
+	  </tr>
+	  
+	  <tr onClick="javascript:window.location.href='owner_bill_detail_constant.html'">
+        <td class="txt-bottom-line">XX13459</td>
+		<td class="txt-bottom-line">刘八</td>
+		<td class="txt-bottom-line"><span>未缴</span></td>
+		<td class="txt-bottom-line"><span>2015-03</span></td>
+      </tr>
+	  
+	  <tr>
+        <td class="txt-bottom-line">XX13459</td>
+		<td class="txt-bottom-line">刘八</td>
+		<td class="txt-bottom-line"><span>未缴</span></td>
+		<td class="txt-bottom-line"><span>2015-02</span></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+</body>
+</html>

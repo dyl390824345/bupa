@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>租房平台</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="assets/images/app-icon72x72@2x.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+<link rel="apple-touch-icon-precomposed" href="assets/images/app-icon72x72@2x.png">
+
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+<meta name="msapplication-TileColor" content="#0e90d2">
+<link rel="stylesheet" href="assets/css/amazeui.min.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<link rel="stylesheet" href="assets/css/app.css">
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=cPoCAOgOKfIfWeAv9ku3kWfg"></script> 
+<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script> 
+
+<script src="assets/js/app_ditu.js"></script>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header data-am-widget="header" class="am-header am-header-fixed" >
+  <div class="am-header-left am-header-nav"> 
+ 	<a href="javascript:history.go(-1)" class="am-btn"><i class="am-header-icon am-icon-angle-left  am-icon-md"></i></a> 
+ </div>
+  <span class="am-header-title">搜索房源</span>
+  <div class="am-header-right am-header-nav"> 
+      <i class="am-header-icon am-icon-map-marker"><font size="-1">地图</font></i>
+  </div>
+</header>
+
+<!-- gap -->
+<div style="height:15px" style="background:#f3f3f3;"></div>
+
+<!--  serach resource -->
+<div class="am-g">
+  <div class="am-input-group am-input-group-primary am-input-group-warning">
+    <input type="text" class="am-form-field" id="idtxtarea" placeholder="搜索小区名或地址">
+    <span class="am-input-group-btn">
+    <button class="am-btn am-btn-warning" id="idsearch" type="button"><span class="am-icon-search"></span></button>
+    </span> </div>
+</div>
+
+<!-- gap -->
+<div style="height:5px"></div>
+
+
+<!-- 地图显示区域 -->
+<div class="am-g" id="map" style="height:600px;"></div>
+
+</body>
+</html>

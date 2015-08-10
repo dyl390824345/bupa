@@ -1,0 +1,214 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>租房平台</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="assets/images/app-icon72x72@2x.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+<link rel="apple-touch-icon-precomposed" href="assets/images/app-icon72x72@2x.png">
+
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+<meta name="msapplication-TileColor" content="#0e90d2">
+
+<link rel="stylesheet" href="assets/css/amazeui.min.css">
+<link rel="stylesheet" href="assets/css/app.css">
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script src="assets/js/app_find_roomer.js"></script>
+
+<style type="text/css">
+
+.am-dropdown{height:35px;}
+.am-dropdown-toggle{font-size:13px;}
+
+[class*=am-u-] {
+   padding-left: 0rem; 
+   padding-right: 0rem; 
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header data-am-widget="header" class="am-header am-header-fixed" >
+  <div class="am-header-left am-header-nav"> 
+   <a href="javascript:history.go(-1)" class="am-btn"><i class="am-header-icon am-icon-angle-left am-icon-md"></i></a>  </div>
+  <h1 class="am-header-title">查询房源</h1>
+  <div class="am-header-right am-header-nav">
+  	<a href="find_house_baidu.html" class="am-btn"><i class="am-header-icon am-icon-search"></i></a>  </div>
+</header>
+
+<div style="height:15px;"></div>
+
+<div class="am-g">
+
+	<div class="am-u-sm-3" style="border-right:1px solid #CCCCCC;">
+		<div id="doc-dropdown-justify1">
+		  <div class="am-dropdown" id="id-dropdown1" data-am-dropdown="{justify: '#doc-dropdown-justify'}">
+			<a class="am-btn am-btn-primary am-dropdown-toggle"><span id="id-dropdown1-title">&nbsp;距&nbsp;离&nbsp;</span><span class="am-icon-caret-down"></span></a>
+			<div class="am-dropdown-content">
+			    <ul class="am-list">
+				  <li> <a href="#"><i class="am-icon-fighter-jet"></i>&nbsp;<span id="menuitem1-1">不限</span></a> </li>
+				  <li> <a href="#"><i class="am-icon-fighter-jet"></i>&nbsp;<span id="menuitem1-2">1km</span></a> </li>
+				  <li> <a href="#"><i class="am-icon-fighter-jet"></i>&nbsp;<span id="menuitem1-3">3km</span></a> </li>
+				  <li> <a href="#"><i class="am-icon-fighter-jet"></i>&nbsp;<span id="menuitem1-4">5km</span></a> </li>
+				  <li> <a href="#"><i class="am-icon-fighter-jet"></i>&nbsp;<span id="menuitem1-5">10km</span></a> </li>
+				</ul>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="am-u-sm-3" style="border-right:1px solid #CCCCCC;">
+		<div id="doc-dropdown-justify2">
+		  <div class="am-dropdown" id="id-dropdown2" data-am-dropdown="{justify: '#doc-dropdown-justify'}">
+			<a class="am-btn am-btn-primary am-dropdown-toggle"><span id="id-dropdown2-title">&nbsp;居&nbsp;室&nbsp;</span><span class="am-icon-caret-down"></span></a>
+			<div class="am-dropdown-content">
+				<ul class="am-list">
+				  <li> <a href="#"><i class="am-icon-home"></i>&nbsp;<span id="menuitem2-1">不限</span></a> </li>
+				  <li> <a href="#"><i class="am-icon-home"></i>&nbsp;<span id="menuitem2-2">1居室</span></a> </li>
+				  <li> <a href="#"><i class="am-icon-home"></i>&nbsp;<span id="menuitem2-3">2居室</span></a> </li>
+				  <li> <a href="#"><i class="am-icon-home"></i>&nbsp;<span id="menuitem2-4">3居室</span></a> </li>
+				  <li> <a href="#"><i class="am-icon-home"></i>&nbsp;<span id="menuitem2-5">4居室</span></a> </li>
+				</ul>
+			</div>
+		  </div>
+		</div>	
+	</div>
+	
+	<div class="am-u-sm-3" style="border-right:1px solid #CCCCCC;">
+		<div id="doc-dropdown-justify3">
+		  <div class="am-dropdown" id="id-dropdown3"  data-am-dropdown="{justify: '#doc-dropdown-justify'}">
+			<a class="am-btn am-btn-primary am-dropdown-toggle"><span id="id-dropdown3-title">&nbsp;租&nbsp;金&nbsp;</span><span class="am-icon-caret-down"></span></a>
+			<div class="am-dropdown-content">
+			    <ul class="am-list">
+				  <li> <a href="#"><i class="am-icon-money"></i>&nbsp;<span id="menuitem3-1">1500以下</span></a></li>
+				  <li> <a href="#"><i class="am-icon-money"></i>&nbsp;<span id="menuitem3-2">1500-2000</span></a></li>
+				  <li> <a href="#"><i class="am-icon-money"></i>&nbsp;<span id="menuitem3-3">2000-3000</span></a></li>
+				  <li> <a href="#"><i class="am-icon-money"></i>&nbsp;<span id="menuitem3-4">3000-5000</span></a></li>
+				  <li> <a href="#"><i class="am-icon-money"></i>&nbsp;<span id="menuitem3-5">5000以上</span></a></li>
+				</ul>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="am-u-sm-3">
+		<div id="doc-dropdown-justify4">
+		  <div class="am-dropdown" id="id-dropdown4" data-am-dropdown="{justify: '#doc-dropdown-justify'}">
+			<a class="am-btn am-btn-primary am-dropdown-toggle"><span id="id-dropdown4-title">&nbsp;更&nbsp;新&nbsp;</span><span class="am-icon-caret-down"></span></a>
+			<div class="am-dropdown-content">
+			    <ul class="am-list">
+				  <li> <a href="#"><i class="am-icon-calendar"></i>&nbsp;<span id="menuitem4-1">一天内</span></a> </li>
+				  <li> <a href="#"><i class="am-icon-calendar"></i>&nbsp;<span id="menuitem4-2">三天内</span></a> </li>
+				  <li> <a href="#"><i class="am-icon-calendar"></i>&nbsp;<span id="menuitem4-3">一周内</span></a> </li>
+				  <li> <a href="#"><i class="am-icon-calendar"></i>&nbsp;<span id="menuitem4-4">一月内</span></a> </li>
+				</ul>
+			</div>
+		  </div>
+		</div>
+	</div>
+</div>
+
+<!-- gap -->
+<div style="height:5px"></div>
+
+<!--  房源列表 -->
+<div data-am-widget="list_news" class="am-list-news am-list-news-default">
+
+  <div class="am-list-news-bd">
+    <ul class="am-list">
+    
+      <!--缩略图在标题左边-->
+      <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+        <div class="am-u-sm-4 am-list-thumb">
+          <a href="owner_house_info.html">
+            <img src="assets/images/imgtest01.jpg" alt=""/>
+          </a>
+        </div>
+        
+        <div class="am-u-sm-8 am-list-main">
+          
+            <a href="owner_house_info.html" class="">&nbsp;澳门银座 A号楼 1单元 整租</a>
+
+          <div class="prouduct_list_content">
+            <span>&nbsp;两室两厅1卫</span>&nbsp;&nbsp;&nbsp;&nbsp;2000元/月<br>
+            <span>&nbsp;武汉市武昌区徐东销品茂</span><br>
+          </div>
+        </div>
+      </li>
+      
+      <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+        <div class="am-u-sm-4 am-list-thumb">
+          <a href="owner_house_info.html">
+            <img src="assets/images/imgtest02.jpg"/>
+          </a>
+        </div>
+        <div class=" am-u-sm-8 am-list-main">
+          <h3 class="am-list-item-hd">
+            <a href="owner_house_info.html" class="">&nbsp;澳门银座 A号楼 1单元 整租</a>
+          </h3>
+          <div class="prouduct_list_content">
+            <span>&nbsp;两室两厅1卫</span>&nbsp;&nbsp;&nbsp;&nbsp;2000元/月<br>
+            <span>&nbsp;武汉市武昌区徐东销品茂</span><br>
+          </div>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<!-- // 房源列表 -->
+
+<!-- 底部菜单 -->
+<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default">
+  <ul class="am-navbar-nav am-cf am-avg-sm-4">
+    <li> <a href="owner_homepage.html" class="am-btn am-icon-home am-icon-md"><br>首页</a> </li>
+    <li> <a href="owner_message_list.html" class="am-btn am-icon-comments-o am-icon-md"><br>消息</a></li>
+   <li> <a href="owner_person_center.html" class="am-btn am-icon-user-secret am-icon-md"><br>我的</a></li>
+    <li data-am-modal="{target:'#subMenu_info'}">
+     <a class="am-btn am-icon-th-list am-icon-md"><br>更多</a>
+     </li>
+  </ul>
+</div>
+
+<div class="am-modal-actions" id="subMenu_info">
+  <div class="am-modal-actions-group">
+    <ul class="am-list">
+      <li > <a href="#"><i class="am-icon-mars"></i>&nbsp;黑名单管理</a> </li>
+      <li > <a href="#"><i class="am-icon-bell"></i>&nbsp;消息提示音</a> </li>
+      <li > <a href="#"><i class="am-icon-key"></i>&nbsp;修改密码&nbsp;</a> </li>
+      <li > <a href="#"><i class="am-icon-leaf"></i>&nbsp;清除缓存&nbsp;</a> </li>
+      <li > <a href="#"><i class="am-icon-tag"></i>&nbsp;意见反馈&nbsp;</a> </li>
+      <li > <a href="#"><i class="am-icon-flag"></i>&nbsp;软件评价&nbsp;</a> </li>
+      <li > <a href="#"><i class="am-icon-qrcode"></i>&nbsp;关于&nbsp;&nbsp;&nbsp;</a> </li>
+    </ul>
+  </div>
+  <div class="am-modal-actions-group">
+    <button class="am-btn am-btn-block" data-am-modal-close>取消</button>
+  </div>
+</div>
+
+<!-- 底部菜单 end --> 
+
+
+</body>
+</html>

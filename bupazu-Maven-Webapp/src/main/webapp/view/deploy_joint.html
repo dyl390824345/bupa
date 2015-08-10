@@ -1,0 +1,299 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>租房平台</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="assets/images/app-icon72x72@2x.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+<link rel="apple-touch-icon-precomposed" href="assets/images/app-icon72x72@2x.png">
+
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+<meta name="msapplication-TileColor" content="#0e90d2">
+<link rel="stylesheet" href="assets/css/amazeui.min.css">
+<link rel="stylesheet" href="assets/css/app.css">
+
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/app_all.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<header data-am-widget="header" class="am-header am-header-fixed">
+  <div class="am-header-left am-header-nav"> 
+  <a href="javascript:history.go(-1)" class="am-btn"><i class="am-header-icon am-icon-angle-left  am-icon-md"></i></a> </div>
+  <h1 class="am-header-title">发布合租</h1>
+  <div class="am-header-right am-header-nav"> 
+    <!--<a href="login.html" class="am-btn"><i class="am-header-icon am-icon-user"></i><span class="am-header-nav-title">登录</span> </a> --> 
+  </div>
+</header>
+
+<!-- gap -->
+<div style="height:5px"></div>
+
+<div class="am-g" align="center">
+	<img class="am-radius am-img-responsive" alt="添加图片"  />
+</div>
+
+<!-- form data -->
+<form action="" id="doc-vld-msg">
+
+	<!--  第一段 data-am-modal="{target: '#myalert8'}" -->
+	 <ul class="am-list am-collapse admin-sidebar-sub am-in" >
+        <li><a href="#">&nbsp;小区名称:&nbsp;&nbsp;
+           <span><font color="#999999">请选择小区</font></span>
+           <span class="am-icon-angle-right right-arrow-icon"></span></a>
+		</li>
+
+        <li><a id="id-hezuleixing">&nbsp;合租类型:&nbsp;&nbsp;
+           <span id="txt-hezuleixing">主卧</span>
+           <span class="am-icon-angle-right right-arrow-icon"></span></a>
+		</li>
+    </ul>
+    
+    <!--  第二段 -->
+    <ul class="am-list am-collapse admin-sidebar-sub am-in self-list_padding" >
+        <li>&nbsp;面&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;积:&nbsp;&nbsp;
+           <span><input type="text" placeholder="请输入单间面积" class="text_border_none"> </span>
+           <span class="am-badge-secondary am-margin-right am-fr">平米</span> 
+		</li>
+        
+        <li>&nbsp;租&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;金:&nbsp;&nbsp;
+           <span><input type="text" placeholder="请输入租金" class="text_border_none"> </span>
+           <span class="am-badge-secondary am-margin-right am-fr">元/月</span> 
+		</li>
+    </ul>
+	
+	<div style="height:10px;"></div>
+	
+	<div class="am-scrollable-horizontal body-white-bgcolor">
+	  <table class="am-table am-table-compact" >
+	  
+		<tbody>
+	 
+		  <tr>
+			<td style="width:80px;">配套措施:</td>
+			<td>	
+				<div class="am-btn-group" data-am-button>
+				  <label class="am-btn am-btn-default" style="font-size:14px">
+					<input type="checkbox" name="doc-js-btn" value="1">床具
+				  </label>
+				  <label class="am-btn am-btn-default" style="font-size:14px">
+					<input type="checkbox" name="doc-js-btn" value="2">宽带
+				  </label>
+				  <label class="am-btn am-btn-default" style="font-size:14px">
+					<input type="checkbox" name="doc-js-btn" value="3">电视
+				  </label>
+				  <label class="am-btn am-btn-default" style="font-size:14px">
+					<input type="checkbox" name="doc-js-btn" value="4">洗衣机
+				  </label>
+				</div>
+			</td>
+		  </tr>
+		  
+		  <tr>
+			<td></td>
+			<td>
+				<div class="am-btn-group" data-am-button>
+				  <label class="am-btn am-btn-default" style="font-size:14px">
+					<input type="checkbox" name="doc-js-btn" value="5">冰箱
+				  </label>
+				  <label class="am-btn am-btn-default" style="font-size:14px">
+					<input type="checkbox" name="doc-js-btn" value="6">空调
+				  </label>
+				  <label class="am-btn am-btn-default" style="font-size:14px">
+					<input type="checkbox" name="doc-js-btn" value="7">暖气
+				  </label>
+				  <label class="am-btn am-btn-default" style="font-size:14px">
+					<input type="checkbox" name="doc-js-btn" value="8">热水器
+				  </label>
+				</div> 
+			</td>
+		  </tr>
+	
+		</tbody>
+	  </table>
+	</div>
+		
+    
+    <!--  第三段 -->
+	 <ul class="am-list am-collapse admin-sidebar-sub am-in" >
+        <li><a href="area_descript.html">&nbsp;描&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;述:&nbsp;&nbsp;
+           <span><font color="#999999">小区环境,交通状况等</font></span>
+           <span class="am-icon-angle-right right-arrow-icon"></span></a>
+		</li>        
+    </ul>
+    
+    <!--  第3-1段 -->
+    <ul class="am-list am-collapse admin-sidebar-sub am-in self-list_padding" >
+        <li>&nbsp;户&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <span><input type="text" style="width:40px" class="text_border_none"> </span>室
+           <span><input type="text" style="width:40px" class="text_border_none"> </span>厅
+           <span><input type="text" style="width:40px" class="text_border_none"> </span>卫
+		</li>
+        
+        <li>&nbsp;楼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;层:&nbsp;&nbsp;第
+           <span><input type="text" style="width:60px" class="text_border_none"> </span>层&nbsp;共
+           <span><input type="text" style="width:60px" class="text_border_none"> </span>层
+		</li>
+        
+    </ul>
+    
+    <!--  第3-2段 -->
+    <ul class="am-list am-collapse admin-sidebar-sub am-in" >
+    
+        <li><a  id="id-myalert1">&nbsp;朝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;向:&nbsp;&nbsp;
+           <span id="txt-myalert1"><font color="#999999">不限</font></span>
+           <span class="am-icon-angle-right right-arrow-icon"></span></a>
+		</li>
+        
+        <li><a id="id-myalert2">&nbsp;装&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修:&nbsp;&nbsp;
+           <span id="txt-myalert2"><font color="#999999">不限</font></span>
+           <span class="am-icon-angle-right right-arrow-icon"></span></a>
+		</li>
+        
+        <li><a id="id-myalert3">&nbsp;支付方式:&nbsp;&nbsp;
+           <span id="txt-myalert3"><font color="#999999">押一付三</font></span>
+           <span class="am-icon-angle-right right-arrow-icon"></span></a>
+		</li>
+        
+    </ul>
+    
+    <!--  第四段 -->
+	 <ul class="am-list am-collapse admin-sidebar-sub am-in self-list_padding" >
+        <li>&nbsp;联&nbsp;系&nbsp;&nbsp;人:&nbsp;&nbsp;
+           <span><input type="text" placeholder="填写联系人" style="width:100px;" class="text_border_none"></span>
+           <span>
+                <div class="am-btn-group" style="font-size:1rem;">
+                  <label class="am-radio-inline">
+                    <input type="radio" name="radio10" value="male" data-am-ucheck checked>先生
+                  </label>
+                  <label class="am-radio-inline">
+                    <input type="radio" name="radio10" value="female" data-am-ucheck>女士
+                  </label>
+                </div>
+           </span>  
+		</li>
+        
+        <li>&nbsp;手&nbsp;机&nbsp;&nbsp;号:&nbsp;&nbsp;
+           <span><font color="#999999">1562432568</font></span>
+           <span class="am-margin-right am-fr">
+                <input type="button" class="am-btn am-btn-default" value="修改手机号">
+           </span>  
+		</li>
+        
+    </ul>
+
+	<!-- gap -->
+    <div style="height:10px"></div>
+    <button class="am-btn am-btn-danger am-btn-block" type="submit">发&nbsp;&nbsp;布</button>
+
+</form>
+
+<!-- 窗口8 -->
+<div class="am-modal am-modal-alert" tabindex="-1" id="myalert8" style="width:160px">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">合租方式</div>
+    <div class="am-modal-bd">
+    	<div class="am-container" align="justify">
+             <label class="am-radio"><input type="radio" name="radio8" value="主卧" data-am-ucheck checked>主卧</label>
+             <label class="am-radio"><input type="radio" name="radio8" value="次卧" data-am-ucheck >次卧</label>
+             <label class="am-radio"><input type="radio" name="radio8" value="隔断间" data-am-ucheck >隔断间</label>
+             <label class="am-radio"><input type="radio" name="radio8" value="床位" data-am-ucheck >床位</label>
+        </div>
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+    </div>
+  </div>
+</div>
+<!-- // 窗口8 -->
+
+<!-- 窗口1 -->
+<div class="am-modal am-modal-alert" tabindex="-1" id="myalert1" style="width:250px">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">房屋朝向</div>
+    <div class="am-modal-bd">
+    	<div class="am-container" align="justify">
+          <div class="am-u-sm-6">
+             <label class="am-radio"><input type="radio" name="radio1" value="南北" data-am-ucheck checked>南北</label>
+             <label class="am-radio"><input type="radio" name="radio1" value="南" data-am-ucheck >南</label>
+             <label class="am-radio"><input type="radio" name="radio1" value="东南" data-am-ucheck >东南</label>
+             <label class="am-radio"><input type="radio" name="radio1" value="东" data-am-ucheck >东</label>
+             <label class="am-radio"><input type="radio" name="radio1" value="西南" data-am-ucheck >西南</label>
+          </div>
+        
+          <div class="am-u-sm-6">
+          	 <label class="am-radio"><input type="radio" name="radio1" value="北" data-am-ucheck>北</label>
+             <label class="am-radio"><input type="radio" name="radio1" value="西" data-am-ucheck >西</label>
+             <label class="am-radio"><input type="radio" name="radio1" value="东西" data-am-ucheck >东西</label>
+             <label class="am-radio"><input type="radio" name="radio1" value="东北" data-am-ucheck >东北</label>
+             <label class="am-radio"><input type="radio" name="radio1" value="西北" data-am-ucheck >西北</label>
+          </div>
+        </div>
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+    </div>
+  </div>
+</div>
+<!-- // 窗口1 -->
+
+<!-- 窗口2 -->
+<div class="am-modal am-modal-alert" tabindex="-1" id="myalert2" style="width:160px">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">装修情况</div>
+    <div class="am-modal-bd">
+    	<div class="am-container" align="justify">
+             <label class="am-radio"><input type="radio" name="radio2" value="豪华装修" data-am-ucheck checked>豪华装修</label>
+             <label class="am-radio"><input type="radio" name="radio2" value="精装修" data-am-ucheck >精装修</label>
+             <label class="am-radio"><input type="radio" name="radio2" value="简装修" data-am-ucheck >简装修</label>
+             <label class="am-radio"><input type="radio" name="radio2" value="毛坯" data-am-ucheck >毛坯</label>
+        </div>
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+    </div>
+  </div>
+</div>
+<!-- // 窗口2 -->
+
+<!-- 窗口3 -->
+<div class="am-modal am-modal-alert" tabindex="-1" id="myalert3" style="width:160px">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">装修情况</div>
+    <div class="am-modal-bd">
+    	<div class="am-container" align="justify">
+             <label class="am-radio"><input type="radio" name="radio3" value="押一付三" data-am-ucheck checked>押一付三</label>
+             <label class="am-radio"><input type="radio" name="radio3" value="押一付二" data-am-ucheck >押一付二</label>
+             <label class="am-radio"><input type="radio" name="radio3" value="押一付一" data-am-ucheck >押一付一</label>
+             <label class="am-radio"><input type="radio" name="radio3" value="半年付" data-am-ucheck >半年付</label>
+             <label class="am-radio"><input type="radio" name="radio3" value="年付" data-am-ucheck >年付</label>
+             <label class="am-radio"><input type="radio" name="radio3" value="面议" data-am-ucheck >面议</label>
+        </div>
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+    </div>
+  </div>
+</div>
+<!-- // 窗口3 -->
+
+</body>
+</html>

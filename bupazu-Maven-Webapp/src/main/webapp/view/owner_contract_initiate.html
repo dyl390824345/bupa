@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>租房平台</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="assets/images/app-icon72x72@2x.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+<link rel="apple-touch-icon-precomposed" href="assets/images/app-icon72x72@2x.png">
+
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+<meta name="msapplication-TileColor" content="#0e90d2">
+
+<link rel="stylesheet" href="assets/css/amazeui.min.css">
+<link rel="stylesheet" href="assets/css/app.css">
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script src="assets/js/app_photo.js"></script>
+
+</head>
+
+<body class="body-white-bgcolor">
+
+<!-- Header -->
+<header data-am-widget="header" class="am-header am-header-fixed">
+  <div class="am-header-left am-header-nav"> 
+   <a href="javascript:history.go(-1)" class="am-btn"><i class="am-header-icon am-icon-angle-left am-icon-md"></i></a>  
+  </div>
+  
+  <h1 class="am-header-title">合同发起</h1>
+  
+  <div class="am-header-right am-header-nav">
+  <!--<a href="person_account_info.html" class="am-btn"><span class="am-header-nav-title">完成</span> </a>  -->
+  </div>
+  
+</header>
+
+<!-- 文件选择隐藏 由<a>便签触发 -->
+<div class="am-g" style="display:none;">
+	<input type="file" id="file_head" onchange="javascript:setImagePreview('file_head','preview');" />
+</div>
+
+<div style="height:15px;"></div>
+
+<div class="am-container">
+    <div class="am-input-group">
+      <input type="text" class="am-form-field"  placeholder="请输入房客账号">
+	  <span class="am-input-group-btn">
+        <button class="am-btn am-btn-default" type="button"><span class="am-icon-search"></span> </button>
+      </span>
+    </div>
+</div>
+
+<!--<hr style="background-color:#504E4E; border:none; height:1px">-->
+<div style="height:10px;"></div>
+
+<form class="am-form" data-am-validator>
+<div class="am-scrollable-horizontal am-container">
+  <table class="am-table am-table-compact" >
+  
+	 <thead>
+        <tr>
+            <th style="border-top:1px solid #666666">合同号</th>
+            <th style="border-top:1px solid #666666">房客</th>
+			<th style="border-top:1px solid #666666">选择</th>
+        </tr>
+    </thead>
+ 
+    <tbody>
+ 
+	  <tr>
+        <td class="txt-bottom-line">X89733</td>
+		<td class="txt-bottom-line">张三(1568213456)</td>
+		<td class="txt-bottom-line">
+		 <div>
+			<label class="am-checkbox">
+				<input type="checkbox" name="cbx" value="ip" data-am-ucheck minchecked="1" maxchecked="1">勾选
+			</label>
+		 </div>
+		</td>
+	  </tr>
+	  
+	  <tr>
+        <td class="txt-bottom-line">X89733</td>
+		<td class="txt-bottom-line">张三(1568213587)</td>
+		<td class="txt-bottom-line">
+		 <div class="am-form-group">
+			<label class="am-checkbox">
+				<input type="checkbox" name="cbx" data-am-ucheck>勾选
+			</label>
+		 </div>
+		</td>
+	  </tr>
+
+    </tbody>
+  </table>
+</div>
+</form>
+
+<div style="height:10px;"></div>
+<div class="am-container">
+	<ul class="am-list am-collapse admin-sidebar-sub am-in">     
+			
+		<li><a id="idphoto">&nbsp;合同拍照:&nbsp;&nbsp;
+		   <span class="am-margin-right">
+		   	 <img class="am-img-thumbnail" src="" id="preview" style="background-color:#C63"  width="40px;" height="40px;" /> 
+		   </span>
+		   <span class="am-icon-angle-right right-arrow-icon"></span></a>
+		</li>
+		
+		<li>&nbsp;手&nbsp;&nbsp;机&nbsp;&nbsp;号:&nbsp;&nbsp;
+			   <span><font color="#999999">185****5624</font></span>
+		</li>            
+			
+		<li>&nbsp;验&nbsp;&nbsp;证&nbsp;&nbsp;码:&nbsp;&nbsp;
+			<span><input type="text" placeholder="请输入验证码" style="width:100px;"></span>
+			<span class="am-margin-right am-fr">
+			   <input type="button" class="am-btn am-btn-default" value="获取验证码">
+			</span>  
+		</li>   
+	</ul>
+</div>
+
+<div class="am-container">
+	<button class="am-btn am-btn-primary">合&nbsp;&nbsp;&nbsp;&nbsp;同&nbsp;&nbsp;&nbsp;&nbsp;发&nbsp;&nbsp;&nbsp;&nbsp;起</button> 
+</div>
+
+<!--  弹出窗口-->
+<div class="am-modal am-modal-alert" tabindex="-1" id="myphotograph">
+  <div class="am-modal-dialog">
+  
+    <div class="am-modal-hd" style="background:#504E4E;"><font color="#FFFFFF">请选择方式</font></div>
+	
+    <div class="am-modal-bd">
+		 <ul class="am-list am-collapse am-in">
+			<li><a href="#">拍照上传</a></li>
+			<li><a href="#">手机相册</a></li>
+		 </ul>
+    </div>
+	
+    <div class="am-modal-footer">
+      <span class="am-modal-btn">取消</span>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
